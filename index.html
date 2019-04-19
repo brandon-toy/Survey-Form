@@ -1,0 +1,98 @@
+
+
+<html>
+  <head>
+    <h1 id="title">Survey Form</h1>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+  </head>
+  <div>
+    <div class="rectangle"></div>
+    <p id="description">What are your thoughts on the NHL Draft Lottery?</p>
+    <form id="survey-form" action="\url-here">
+      <div class="labels">
+        <label id="name-label" for="name">Name*: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+      <div class="labels">
+        <label id="email-label" for="email">Email*: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" class="input-field" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="labels">
+        <label id="number-label">Age*:</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" id="number" class="input-field" min="1" max ="125" placeholder="Enter your Age">
+      </div>
+      <div class="right-tab">
+        <label id="dropdown">What NHL team do you cheer for?</label>
+      </div>
+      <div id="nhlteams">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option value="None">None</option>
+          <option value="ducks">Anaheim Ducks</option>
+          <option value="coyotes">Arizona Coyotes</option>
+          <option value="bruins">Boston Bruins</option>
+          <option value="sabres">Buffalo Sabres</option>
+          <option value="flames">Calgary Flames</option>
+          <option value="hurricanes">Carolina Hurricanes</option>
+          <option value="blackhawks">Chicago Blackhawks</option>
+          <option value="avalance">Colorado Avalanche</option>
+          <option value="bluejackets">Columbus Blue Jackets</option>
+          <option value="stars">Dallas Stars</option>
+          <option value="redwings">Detroit Red Wings</option>
+          <option value="oilers">Edmonton Oilers</option>
+          <option value="panthers">Florida Panthers</option>
+          <option value="kings">Los Angles Kings</option>
+          <option value="wild">Minnesota Wild</option>
+          <option value="canadiens">Montreal Canadiens</option>
+          <option value="predators">Nashville Predators</option>
+          <option value="devils">New Jersey Devils</option>
+          <option value="islanders">New York Islanders</option>
+          <option value="rangers">New York Randers</option>
+          <option value="senators">Ottawa Senators</option>
+          <option value="flyers">Philadelphia Flyers</option>
+          <option value="penguins">Pittsburgh Penguins</option>
+          <option value="sharks">San Jose Sharks</option>
+          <option value="blues>">St. Louis Blues</option>
+          <option value="lightning">Tampa Bay Lightning</option>
+          <option value="laughs">Toronto Maple Leafs</option>
+          <option value="canucks">Vancouver Canucks</option>
+          <option value="knights">Vegas Golden Knights</option>
+          <option value="capitals">Washington Capitals</option>
+          <option value="jets">Winnipeg Jets</option>
+        </select>
+      </div>
+      <div class="labels">
+        <label for="userRating">How do you feel about the outcome of the 2019 draft lottery?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Great<input name="radio-buttons" value="great" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Meh....<input name="radio-buttons" value="meh" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>my disappointment is imeasurable and my day is ruined<input name="radio-buttons" value="depression" type="radio" class="userRatings"></label></li>
+        </ul>
+      </div>
+      <div class="labels">
+         <label for="preferences">Things that should be improved in the draft lottery<br>(Check all that apply)</label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">The way the draft works</li></label>
+        <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">The way percentage is distributed</li></label>
+        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Everything</li></label>
+      </div>
+      <div class="labels">
+        <label for="comments">additional comments</label>
+      </div>
+      <div class="right-tab">
+        <textarea id="comments" class="input-field" style="height:50px;width:50px;" name="comment"></textarea>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  <div id="bottom"></div>
+  </div>
+</html>
